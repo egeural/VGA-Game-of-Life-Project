@@ -1,0 +1,87 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun May 11 15:50:41 2025
+| Host         : MYBOYY running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |            7 |
+| No           | No                    | Yes                    |            1248 |          759 |
+| No           | Yes                   | No                     |              12 |            4 |
+| Yes          | No                    | No                     |            1200 |         1146 |
+| Yes          | No                    | Yes                    |              45 |           17 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+-----------------+------------------+------------------+----------------+--------------+
+|   Clock Signal   |  Enable Signal  | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+-----------------+------------------+------------------+----------------+--------------+
+|  px_clock        |                 | sim/r[3]_i_1_n_0 |                1 |              4 |         4.00 |
+|  px_clock        |                 | sim/g[3]_i_1_n_0 |                3 |              8 |         2.67 |
+|  px_clock        | sim/cursor_x__0 | rst_IBUF         |                6 |             10 |         1.67 |
+|  px_clock        | sim/v_count     | rst_IBUF         |                4 |             10 |         2.50 |
+|  px_clock        |                 | rst_IBUF         |                4 |             15 |         3.75 |
+|  px_clock        |                 |                  |                7 |             23 |         3.29 |
+|  px_clock        | sim/cursor_y__0 | rst_IBUF         |                7 |             25 |         3.57 |
+|  clock_IBUF_BUFG | sim/next_cells  |                  |             1146 |           1200 |         1.05 |
+|  clock_IBUF_BUFG |                 | rst_IBUF         |              755 |           1233 |         1.63 |
++------------------+-----------------+------------------+------------------+----------------+--------------+
+
+

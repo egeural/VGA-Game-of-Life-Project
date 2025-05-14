@@ -1,0 +1,409 @@
+
+*** Running vivado
+    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun May 11 15:47:46 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_module.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13332
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1026.332 ; gain = 466.684
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10180] variable 'count' must explicitly be declared as automatic or static [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:191]
+WARNING: [Synth 8-10180] variable 'nx' must explicitly be declared as automatic or static [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:195]
+WARNING: [Synth 8-10180] variable 'ny' must explicitly be declared as automatic or static [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:196]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/top_module.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'game_of_life_controller' [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'game_of_life_controller' (0#1) [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/top_module.sv:3]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:146]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][0] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][1] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][2] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][3] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][4] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][5] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][6] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][7] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][8] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][9] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][10] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][11] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][12] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][13] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][14] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][15] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][16] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][17] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][18] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][19] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][20] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][21] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][22] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][23] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][24] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][25] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][26] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][27] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][28] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[0][29] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][0] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][1] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][2] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][3] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][4] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][5] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][6] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][7] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][8] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][9] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][10] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][11] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][12] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][13] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][14] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][15] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][16] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][17] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][18] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][19] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][20] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][21] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][22] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][23] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][24] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][25] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][26] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][27] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][28] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[1][29] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][0] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][1] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][2] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][3] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][4] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][5] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][6] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][7] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][8] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][9] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][10] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][11] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][12] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][13] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][14] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][15] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][16] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][17] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][18] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][19] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][20] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][21] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][22] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][23] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][24] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][25] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][26] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][27] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][28] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[2][29] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][0] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][1] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][2] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][3] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][4] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][5] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][6] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][7] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][8] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+WARNING: [Synth 8-7137] Register next_cells_reg[3][9] in module game_of_life_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/sources_1/new/game_of_life_controller.sv:203]
+INFO: [Common 17-14] Message 'Synth 8-7137' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1931.652 ; gain = 1372.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1931.652 ; gain = 1372.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1931.652 ; gain = 1372.004
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1931.652 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2035.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2035.980 ; gain = 1476.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2035.980 ; gain = 1476.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2035.980 ; gain = 1476.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+game_of_life_controller__GB5game_of_life_controller__GB4game_of_life_controller__GB3game_of_life_controller__GB2game_of_life_controller__GB1game_of_life_controller__GB0---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 115695
+   Resynthesis Design Size (number of cells) : 0
+   Resynth % : 0.0000,  Reuse % : 100.0000
+
+3. Reference Checkpoint Information
+
++-------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/Ege/Desktop/CS223/stage3/stage3.srcs/utils_1/imports/synth_1/top_module.dcp |
++-------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2024.2 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |game_of_life_controller__GB0_#REUSE# |           1|         0|
+|2     |game_of_life_controller__GB1_#REUSE# |           1|         0|
+|3     |game_of_life_controller__GB2_#REUSE# |           1|         0|
+|4     |game_of_life_controller__GB3_#REUSE# |           1|         0|
+|5     |game_of_life_controller__GB4_#REUSE# |           1|         0|
+|6     |game_of_life_controller__GB5_#REUSE# |           1|         0|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    19|
+|3     |LUT1   |    12|
+|4     |LUT2   |   423|
+|5     |LUT3   |  3164|
+|6     |LUT4   |   151|
+|7     |LUT5   |  2756|
+|8     |LUT6   |  4847|
+|9     |MUXF7  |   161|
+|10    |MUXF8  |    71|
+|11    |FDCE   |  1270|
+|12    |FDPE   |    23|
+|13    |FDRE   |  1225|
+|14    |FDSE   |     2|
+|15    |IBUF   |     9|
+|16    |OBUF   |    14|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 2093.617 ; gain = 1429.641
+Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 2093.617 ; gain = 1533.969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 2093.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 251 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_module' is not ideal for floorplanning, since the cellview 'game_of_life_controller' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2093.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7b366800
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 2093.617 ; gain = 1723.418
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2093.617 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ege/Desktop/CS223/stage3/stage3.runs/synth_1/top_module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 11 15:49:47 2025...
